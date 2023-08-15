@@ -40,7 +40,8 @@ public class EasyLinqExercises : IEasyLinqExercises
     // Exercise 5: Return the string "Hello, [name]!" for each name in the given list.
     public List<string> GetHelloMessages(List<string> names)
     {
-        return names.ForEach();
+        var q = from i in names select $"Hello, {i}";
+        return q.ToList();
     }
 
     // Exercise 6: Return the number of elements in the given list.
@@ -52,25 +53,27 @@ public class EasyLinqExercises : IEasyLinqExercises
     // Exercise 7: Return a list of numbers multiplied by 2.
     public List<int> GetDoubledNumbers(List<int> numbers)
     {
-        return ;
+        var q = from i in numbers select i * 2;
+        return q.ToList();
     }
 
     // Exercise 8: Return a list of strings converted to uppercase.
     public List<string> ConvertToUpper(List<string> words)
     {
-        throw new NotImplementedException();
+        var q = from i in words select i.ToUpper();
+        return q.ToList();
     }
 
     // Exercise 9: Return true if the given number exists in the list, false otherwise.
     public bool IsNumberInList(List<int> numbers, int number)
     {
-        throw new NotImplementedException();
+        return numbers.Contains(number);
     }
 
     // Exercise 10: Return a list of distinct numbers from the given list.
     public List<int> GetDistinctNumbers(List<int> numbers)
     {
-        throw new NotImplementedException();
+        return numbers.Distinct().ToList();
     }
 }
 

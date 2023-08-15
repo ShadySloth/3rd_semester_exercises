@@ -6,6 +6,7 @@ Learing objective: Being able to write medium difficulty algorithms.
 Additional help: I put guided solutions in the ./Solutions directory.
 */
 
+using System.ComponentModel.DataAnnotations;
 using NUnit.Framework;
 
 namespace gettingstarted;
@@ -15,52 +16,62 @@ public class MediumLinqExercises : IMediumLinqExercises
 {
     public int CountVowels(string text)
     {
-        throw new NotImplementedException();
+        var q = from i in text where "aeiou".Contains(i) select i;
+        return q.Count();
     }
 
     public List<int> GetNumbersInRange(List<int> numbers, int start, int end)
     {
-        throw new NotImplementedException();
+        var q = from i in numbers 
+            where (numbers.IndexOf(i) >= start && numbers.IndexOf(i) <= end) 
+            select i;
+        return q.ToList();
     }
 
     public int GetSumOfSquares(List<int> numbers)
     {
-        throw new NotImplementedException();
+        var q = from i in numbers select i * i;
+        return q.Sum();
     }
 
     public List<string> GetWordsLongerThanN(List<string> words, int n)
     {
-        throw new NotImplementedException();
+        var q = from i in words where i.Length > n select i;
+        return q.ToList();
     }
 
     public List<string> GetDistinctWords(string text)
     {
-        throw new NotImplementedException();
+        return text.Split(separator:" ").Distinct().ToList();
     }
 
     public bool AnyWordStartsWithA(List<string> words)
     {
-        throw new NotImplementedException();
+        var q = from i in words select i.StartsWith("a");
+        return q.Any();
     }
 
     public List<int> GetNumbersDivisibleBy3Or5(List<int> numbers)
     {
-        throw new NotImplementedException();
+        var q = from i in numbers where i % 3 == 0 || i % 5 == 0 select i;
+        return q.ToList();
     }
 
     public List<string> GetWordsSortedByLength(string text)
     {
-        throw new NotImplementedException();
+        var q = text.Split(" ").ToList();
+        return q.OrderBy(q => q.Length).ToList();
     }
 
     public List<int> GetSquaredNumbersSorted(List<int> numbers)
     {
-        throw new NotImplementedException();
+        var q = from i in numbers select i * i;
+        return q.OrderBy(q => int.Max(q,q)).ToList();
     }
 
     public int CountUniqueCharacters(string text)
     {
-        throw new NotImplementedException();
+        return text.Distinct().Count();
     }
 
     public Dictionary<string, int> GetWordFrequencies(string text)
