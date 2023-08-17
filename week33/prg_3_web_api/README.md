@@ -13,7 +13,11 @@
 - Prioritize completing the exercises from yesterday (except for hard LINQ)
 - Then do the exercises "FirstWebAPI"
 
+## Important: .NET 8 uses another default layout, so i recommend cloning this repo with version 8 and controllers:
 
+```bash
+git clone https://github.com/uldahlalex/dotnetwebapi
+```
 
 ### Relevant literature & documentation (high priority in *italics*):
 - *Mozilla docs: Overview of HTTP*: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview

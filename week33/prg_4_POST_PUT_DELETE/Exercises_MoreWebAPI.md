@@ -40,13 +40,14 @@ What data can you see about the HTTP request you sent from the Swagger page?
 
 **Learning objective:** You must be able to use a tool like Postman to analyze HTTP requests and responses - and a relevant step is learning to import an HTTP request.
 
+## Guided solutions for the rest of the exercises can be found in https://github.com/uldahlalex/dotnetwebapi in file Controllers/Day2Solutions
+
 
 ### Construct a Custom POST Endpoint
 
 
-**Task:** Create a POST endpoint that takes a JSON body/payload and deserializes as a custom C# object. Return with 201 response + the same JSON as client sent.
-**Success Criteria:** Using an HTTP client (like Swagger), you should be able to send JSON and receive a 201 response along with the same body.
-
+**Task:** Create a POST endpoint that takes a JSON body/payload and deserializes into a C# object. Return the same object.
+**Success Criteria:** Using an HTTP client (like Swagger or Postman), you should be able to send JSON and receive it again.
 **Learning objective:** You must know to make a POST endpoint that takes a custom DTO in the payload.
 
 ---
@@ -80,24 +81,17 @@ What data can you see about the HTTP request you sent from the Swagger page?
 **Task:** Annotate a controller class with the [ApiController] attribute.
 Return a "Bad request" response to a client by throwing an exception.
 
-**Success criteria:** You should get a 400 status code (Bad request).
+**Success criteria:** You should get a status code indicating an error
 
 **Learning objective**: You should be able to make use of the [ApiController] attribute in order to send appropriate responses to the requester.
 
----
-
-### Make custom data annotations
-
-**Task:** Make data annotations for a request DTO class. Now make a request that will make the data validators fail while using [ApiController].
-
-**Success criteria:** A request that you expect to fail should return a 400 Bad Request status code. (without an exception being thrown)
-
-**Learning objective:** You must know how to perform server-side data validation using Data annotations and return appropriate responses based on this.
 
 ---
 
 
 ### Make a CRUD web API with in-memory database
+
+Please be patient with this exercises - it may require some time. I have deliberately not created a guided solution for this one.
 
 **Task:** Now that you know the basics of making API's, make a Web API which performs basic CRUD operations (without a database - just keep the data in memory).
 

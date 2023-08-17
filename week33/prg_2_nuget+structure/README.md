@@ -22,3 +22,4 @@
     - *Higher priority: https://learn.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli*
 - Nunit https://nunit.org
 - Fluent Assertions: https://fluentassertions.com/ (I recommend reading *Getting Started* and *Basic Assertions*)
+- Slides: https://docs.google.com/presentation/d/e/2PACX-1vQSKNkuxbpwVk5rVjI_zxzm9t5LnIJmam8HNL5oWseiSeRr3E56ahscsd6c6j8qmF5Ryxk3oek1xN-j/pub?start=false&loop=false&delayms=60000

@@ -1,3 +1,5 @@
+We start at 9 o'clock at E0 (upstairs)
+
 ### Presentation topics:
 - Part 1
     - 3rd semester overview
@@ -45,3 +47,4 @@ My personal recommendation is Rider by Jetbrains, which you have a student licen
 - .NET CLI overview: https://learn.microsoft.com/en-us/dotnet/core/tools/
 - Some basic info about bash: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 - Microsoft docs: "C# for Java Developers cheat sheet: https://download.microsoft.com/download/D/E/E/DEE91FC0-7AA9-4F6E-9FFA-8658AA0FA080/CSharp%20for%20Java%20Developers%20-%20Cheat%20Sheet.pdf
+- Slides: https://docs.google.com/presentation/d/e/2PACX-1vQD4JwcxtiFJnlV5Zi6yrg6K_GT8XlTEVJgiTJm7SsA6tQf9Hv2C5TI_4-ncxXK_PSiKu6HmGftknw3/pub?start=false&loop=false&delayms=60000
