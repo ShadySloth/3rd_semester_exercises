@@ -47,7 +47,9 @@ What data can you see about the HTTP request you sent from the Swagger page?
 
 
 **Task:** Create a POST endpoint that takes a JSON body/payload and deserializes into a C# object. Return the same object.
+
 **Success Criteria:** Using an HTTP client (like Swagger or Postman), you should be able to send JSON and receive it again.
+
 **Learning objective:** You must know to make a POST endpoint that takes a custom DTO in the payload.
 
 ---
