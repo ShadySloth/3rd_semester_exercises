@@ -113,8 +113,6 @@ Return the value to the client.
 
 **Task:** Use the HttpContext class to set some HTTP response header in some endpoint.
 
-Relevant info can be found here: 
-
 **Success criteria:** Send a request to that endpoint with Postman and inspect the response headers. The value should be present.
 
 **Learning objective:** You must know how to use the HttpContext to modify http responses.

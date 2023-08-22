@@ -1,3 +1,4 @@
+
 ### Before exercises: Install dependencies
 
 Make a new .csproj for testing. Depending on how you run your tests, you will need to install these dependencies to get started with NUnit and Fluent Assertions:

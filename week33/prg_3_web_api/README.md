@@ -18,6 +18,8 @@
 ```bash
 git clone https://github.com/uldahlalex/dotnetwebapi
 ```
+Slides:
+https://docs.google.com/presentation/d/e/2PACX-1vQqi0RqcQ2VB23NxttSVPhp0KpCKPEWgWcR_9xY1Dh9-dfTWQ1xivTuDwQFJ-auvm2f73k2KYxcQJfn/pub?start=false&loop=false&delayms=3000
 
 ### Relevant literature & documentation (high priority in *italics*):
 - *Mozilla docs: Overview of HTTP*: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview

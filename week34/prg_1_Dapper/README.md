@@ -5,9 +5,13 @@
 - Brief introduction to Datagrip
 
 **Recommended actions:**
-- Sign up for a free managed database plan at https://www.elephantsql.com or run a Postgres database from another vendor or locally on your own machine
+- Sign up for a free managed database plan at https://www.elephantsql.com or run a Postgres database from another vendor or locally on your own machine. PICK AMAZON WEB SERVICES IN STOCKHOLM, SWEDEN.
 - Install some sort of database navigator tool capable of sending request to a Postgres database. (I recommend Jetbrains Datagrip or simply using the extension inside Rider)
 - Do the exercises in the same directory as this readme file.
+
+Tip: There is a diagram of the table in this directory (screenshot png file).
+
+SLIDES: https://docs.google.com/presentation/d/e/2PACX-1vRif0n0ApeOqfg4jUJZXUoNpfW6K86NrTKM2Ih9czQmAS2TUjhY67H31di98lPz16ADvONTMR1aKax1/pub?start=false&loop=false&delayms=3000
 
 ### Literature & documentation (high priority reading is in *italics*):
 - ElephantSQL getting started: https://www.elephantsql.com/docs/index.html

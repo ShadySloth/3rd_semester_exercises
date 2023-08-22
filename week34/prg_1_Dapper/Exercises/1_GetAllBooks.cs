@@ -28,6 +28,7 @@ public class GetAllBooksExercise
         var expected = new List<Book>();
         for (var i = 1; i < 10; i++)
         {
+
             var book = Helper.MakeRandomBookWithId(i);
             expected.Add(book);
             //Note if you're reading this: There is a more performant way of making "bulk" inserts rather than loops,
