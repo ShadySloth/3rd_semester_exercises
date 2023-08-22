@@ -8,7 +8,21 @@ public class GetFullBookDetailsExercise
 {
     public FullBookDetails GetFullBookDetails(int bookid)
     {
-        throw new NotImplementedException();
+        var sql = $@"SELECT books.book_id AS {nameof(Book.BookId)},
+                            title AS {nameof(Book.Title)},
+                            publisher AS {nameof(Book.Publisher)},
+                            cover_img_url AS {nameof(Book.CoverImgUrl)},
+                            array_agg(library.authors.name) AS {nameof(BookWithAuthors.Authors)}
+                    FROM library.books
+                    JOIN library.author_wrote_book_items AS junction ON books.book_id = junction.book_id
+                    JOIN library.authors ON junction.author_id = authors.author_id
+                    WHERE books.book_id = @bookid
+                    GROUP BY books.book_id, books.title;";
+
+        using (var conn = Helper.DataSource.OpenConnection())
+        {
+            return conn.QueryFirst<FullBookDetails>(sql, new {bookid});
+        }
     }
 
     [Test]

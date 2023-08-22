@@ -9,7 +9,19 @@ public class UpsertBookExercise
 {
     public Book UpsertAndReturnBook(int bookId, string title, string publisher, string coverImgUrl)
     {
-        throw new NotImplementedException();
+        var sql = $@"INSERT INTO library.books (book_id, title, publisher, cover_img_url)
+                    VALUES (@bookId, @title, @publisher, @coverImgUrl)
+                    ON CONFLICT (book_id)
+                    DO UPDATE SET title = @title, publisher = @publisher, cover_img_url = @coverImgUrl
+                    RETURNING book_id as {nameof(Book.BookId)},
+                        title as {nameof(Book.Title)},
+                        publisher as {nameof(Book.Publisher)},
+                        cover_img_url as {nameof(Book.CoverImgUrl)};";
+
+        using (var conn = Helper.DataSource.OpenConnection())
+        {
+            return conn.QueryFirst<Book>(sql, new { bookId, title, publisher, coverImgUrl });
+        }
     }
 
     [Test]
