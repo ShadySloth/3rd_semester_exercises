@@ -7,7 +7,7 @@ namespace gettingstarted.week34.prg_2_Dapper_2;
 
 public class AddAuthorToBooksAuthor
 {
-    public bool AddAuthorToBooksAuthor(int bookId, int authorId)
+    public bool AddAuthorToBooksAuthorExcercise(int bookId, int authorId)
     {
         var sql = $@"INSERT INTO";
         using (var conn = Helper.DataSource.OpenConnection())
@@ -34,7 +34,7 @@ public class AddAuthorToBooksAuthor
 
         bool actual;
         //Act
-        actual = AddAuthorToBooksAuthor();
+        actual = AddAuthorToBooksAuthorExcercise(book.BookId, author.AuthorId);
 
         //Assert
         using (var conn = Helper.DataSource.OpenConnection())
